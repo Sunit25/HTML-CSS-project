@@ -1,0 +1,150 @@
+@import url("https://marksheet.io/css/reset.css");
+
+/* CSS, Sunit */
+  
+body {
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 5%;
+}
+
+/* Used picture: https://imgur.com/LJvMTyw */
+
+body::before { 
+    content: url(https://i.imgur.com/LJvMTyw.png);
+    transform: scale(.3);
+    position: fixed;
+    left: 50%;
+    top: -6%;
+    background: white;
+}
+
+h1, h3 {
+    margin: 0px;
+    word-wrap: break-word;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25em ;
+    color: #484848;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    padding:10% 0;
+}
+
+p, ul, h6 {
+    margin: 0px;
+    word-wrap: break-word ;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2857142857142858em;
+    color: #484848;
+}
+
+inout, label, form {
+    overflow-wrap: break-word;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.33333em;
+    letter-spacing: 0.0833333em;
+    color: rgb(72, 72, 72);
+    margin: 0px;
+}
+
+#Comment {
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 4px;
+    width: 508px;
+    margin-bottom: 64px 
+    padding-top: 64px 
+    padding-bottom: 24px;
+    padding: 32px;
+}
+
+input[type="submit"],
+input[type="Reset"] {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px ;
+    padding: 0 4px;
+    background-color: #006a70;
+    margin: 0px;
+    word-wrap: break-word;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3333333333333333em;
+    color: #fff;
+}
+
+h1 > a {
+  color: #fff;
+  background: #ff5a5f;
+  position: relative;
+  left: -150px;
+  top: -150px;
+  border-radius: 3px;
+  padding: 1%;
+  text-decoration: none;
+}
+
+div {
+  width: inherit;
+  height: auto;
+}
+
+/* Breadcrump Menu */
+
+summary {
+    display: none;
+}
+
+menu { 
+    background: white;
+    margin: 0; 
+    padding: 1%;
+    position: fixed;
+    top:0px;
+    left: 10%;
+    font-weight: 900;
+}
+
+menu li {
+    display: inline-block;
+}
+
+menu li a {
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.375em;
+    color: #484848;
+}
+
+menu li a:hover {
+    margin: 0 -12%;
+    padding: 0 12%;
+    color: #fff;
+    background: #ff5a5f;
+    display: inline-block;
+}
+
+menu li::before {
+    content: '/';
+    margin-left: 5%;
+    margin-right: 10%;
+    color: #7f7f7f;
+}
+
+menu li:first-child::before {
+    content: '';
+}
